@@ -10,7 +10,7 @@ from ...irf import PSFKing
 def test_PSFKing():
     filename = gammapy_extra.filename('test_datasets/irf/hess/pa/hess_psf_king_023523.fits.gz')
     # psf = PSFKing.read(filename)
-    psf = PSFKing()
+    psf = PSFKing(name='Peter')
     assert psf.name == 'Peter'
 
 
